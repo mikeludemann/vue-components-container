@@ -1,0 +1,35 @@
+{
+  "name": "vue-tutorial",
+  "version": "1.0.0",
+  "description": "Vue Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeludemann/vue-tutorial.git"
+  },
+  "keywords": [
+    "Vue",
+    "DevTools",
+    "cli",
+    "loader"
+  ],
+  "author": "Mike Ludemann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeludemann/vue-tutorial/issues"
+  },
+  "homepage": "https://github.com/mikeludemann/vue-tutorial#readme",
+  "devDependencies": {
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.2.0",
+    "vue-loader": "^15.2.4",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-rx": "^6.0.0",
+    "vue-server-renderer": "^2.5.16",
+    "vuex": "^3.0.1"
+  }
+}
