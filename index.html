@@ -9,8 +9,43 @@
     <script src="./src/libs/script/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="./src/libs/styles/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="./src/libs/styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
 </head>
 <body>
-    <!-- TBD -->
+    <header>
+        <nav id="title" class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="navbar-brand" v-if="visible">{{title}}</div>
+            <div class="navbar-brand" v-else>Vue</div>
+        </nav>
+    </header>
+    <section>
+        <div id="root">
+            <div v-on:click="handleAlert">
+                Test
+            </div>
+        </div>
+        <div id="lists">
+            <ol>
+                <list-item
+                  v-for="item in sourceList"
+                  v-bind:list="item"
+                  v-bind:key="item.id">
+                </list-item>
+            </ol>
+            <ul>
+                <list-item
+                  v-for="item in sourceList"
+                  v-bind:list="item"
+                  v-bind:key="item.id">
+                </list-item>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="float-left">Copyright &copy; 2018 - heute</div>
+        <div class="float-right">Mike Ludemann</div>
+    </footer>
+    <script src="./src/script/index.js"></script>
+    <script src="./src/script/components/list-items/list-item.js"></script>
 </body>
 </html>
