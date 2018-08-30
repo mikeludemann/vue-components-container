@@ -1,0 +1,11 @@
+<div id="optSelect">
+    <option-list :options="options"></option-list>
+</div>
+
+<template id="selection">
+    <select>
+        <option v-for="(text, value) in options" :value="text">
+            {{ text }}
+        </option>
+    </select>
+</template>

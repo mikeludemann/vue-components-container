@@ -1,0 +1,9 @@
+<div id="selectSource">
+    <source-list :sources="sources"></source-list>
+</div>
+
+<template id="selection">
+    <video controls>
+        <source v-for="(key, value) in sources" v-bind:src="value" v-bind:type="key">
+    </video>
+</template>

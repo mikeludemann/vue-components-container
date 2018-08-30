@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Vue Tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./src/libs/styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
 </head>
+
 <body>
     <header>
         <nav id="title" class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -26,26 +28,26 @@
         </div>
         <div id="lists">
             <ol>
-                <list-item
-                  v-for="item in sourceList"
-                  v-bind:list="item"
-                  v-bind:key="item.id">
+                <list-item v-for="item in sourceList" v-bind:list="item" v-bind:key="item.id">
                 </list-item>
             </ol>
             <ul>
-                <list-item
-                  v-for="item in sourceList"
-                  v-bind:list="item"
-                  v-bind:key="item.id">
+                <list-item v-for="item in sourceList" v-bind:list="item" v-bind:key="item.id">
                 </list-item>
             </ul>
         </div>
+        <div id="modernlist">
+            <modern-item v-for="item in modernList" v-bind:list="item" v-bind:key="item.id"></modern-item>
+        </div>
     </section>
     <footer>
-        <div class="float-left">Copyright &copy; 2018 - heute</div>
-        <div class="float-right">Mike Ludemann</div>
+        <custom-footer></custom-footer>
     </footer>
     <script src="./src/script/index.js"></script>
-    <script src="./src/script/components/list-items/list-item.js"></script>
+    <script src="./src/script/components/list/listItem/list-item.js"></script>
+    <script src="./src/script/components/list/modernList/modern-item.js"></script>
+    <script src="./src/script/components/includes/header/header.js"></script>
+    <script src="./src/script/components/includes/footer/footer.js"></script>
 </body>
+
 </html>

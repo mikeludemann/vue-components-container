@@ -1,0 +1,14 @@
+<div id="selectTrack">
+    <track-list :tracks="tracks"></track-list>
+</div>
+
+<template id="tracks">
+    <video controls>
+        <track v-for="track in tracks" 
+            v-bind:src="track.url" 
+            v-bind:kind="track.kind" 
+            v-bind:srclang="track.srclang" 
+            v-bind:label="track.label"
+        >
+    </video>
+</template>
