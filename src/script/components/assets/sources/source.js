@@ -12,3 +12,25 @@ var sources = new Vue({
         }
     }
 });
+
+// ----------------------------------------------------
+
+Vue.component('sources', {
+    props: {
+        url: String,
+        urlset: String,
+        media: String,
+        size: String,
+        type: String
+    },
+    template: 
+    `
+    <source
+        v-bind:src="url"
+        v-bind:srcset="urlset"
+        v-bind:media="media"
+        v-bind:sizes="size"
+        v-bind:type="type"
+    />
+    `
+})
