@@ -1,0 +1,8 @@
+<div id="app">
+    <button id="show-modal" @click="isModalVisible = true">Show Modal</button>
+    <modal v-if="isModalVisible" @closing="isModalVisible = false">
+        <h2 slot="header">My header</h2>
+        <div slot="body">this is the body</div>
+        <div slot="footer">Copyright</div>
+    </modal>
+</div>
