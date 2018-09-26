@@ -28,13 +28,14 @@ Vue.component('data-protection-officer', {
     template:
     `
     <div>
-    <h2>Data protection officer</h2>
-    <h3>Statutory data protection officer</h3>
-    <p>We have appointed a data protection officer for our company.</p>
-    <p>{{firstname}} {{lastname}}
-    <br /> {{street}} {{streetnumber}}
-    <br /> {{postalcode}} {{city}}</p>
-    <p>Telephone: {{telephone}}
-    <br /> Email: {{email}}</p>
+        <h2>Data protection officer</h2>
+        <h3>Statutory data protection officer</h3>
+        <p>We have appointed a data protection officer for our company.</p>
+        <p>{{firstname}} {{lastname}}
+        <br /> {{street}} {{streetnumber}}
+        <br /> {{postalcode}} {{city}}</p>
+        <p>Telephone: {{telephone}}
+        <br /> Email: {{email}}</p>
+    </div>
     `
 })
