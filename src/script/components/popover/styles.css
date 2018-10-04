@@ -122,7 +122,22 @@
     transform: rotate(90deg);
 }
 
-.toggle--visible {
+.popover:hover .popover-text-right {
     visibility: visible;
-    opacity: 1;
+    display: block;
+}
+
+.popover:hover .popover-text-top {
+    visibility: visible;
+    display: block;
+}
+
+.popover:hover .popover-text-left {
+    visibility: visible;
+    display: block;
+}
+
+.popover:hover .popover-text-bottom {
+    visibility: visible;
+    display: block;
 }

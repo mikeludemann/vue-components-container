@@ -121,8 +121,3 @@
     border-color: #555 transparent transparent transparent;
     transform: rotate(90deg);
 }
-
-.toggle--visible {
-    visibility: visible;
-    opacity: 1;
-}
