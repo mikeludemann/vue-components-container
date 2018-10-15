@@ -1,3 +1,3 @@
-# Vue Tutorial
+# Vue - Components and Container
 
-Tutorial with Vue
+Components and Container with VueJS
