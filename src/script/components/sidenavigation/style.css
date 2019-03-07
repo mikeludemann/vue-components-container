@@ -1,0 +1,46 @@
+.sidenavigation {
+	max-height: 100%;
+	width: 25%;
+	position: fixed;
+	top: 0;
+	overflow-y: scroll;
+	left: 0;
+}
+
+.sidenavigation::-webkit-scrollbar { 
+	display: none; 
+}
+
+.sidenavigation > div > a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.sidenavigation > div {
+	position: relative;
+	left: -60px;
+	transition: 0.3s;
+	width: 100px;
+	height: auto;
+	background-color: #888;
+    border-bottom: 0.5px solid #fff;
+}
+
+.sidenavigation div:hover {
+	left: 0;
+}
+
+.sidenavigation > div::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+div > a {
+	display: block;
+	float: left;
+	min-width: 75px;
+	width: calc(50% - 10px);
+}
