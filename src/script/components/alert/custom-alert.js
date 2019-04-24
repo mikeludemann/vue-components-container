@@ -209,8 +209,8 @@ Vue.component('custom-alert', {
 				<i class="fa-2x fas"></i>
 			</div> 
 			<div class="context">
-				<strong id="headline">Warning!</strong><br/>
-				<span id="text">Indicates a warning that might need attention.</span>
+				<strong id="headline"></strong><br/>
+				<span id="text"></span>
 			</div>
 			<div class="close">
 				<span class="closebtn"><i class="fas fa-times fa-lg"></i></span>

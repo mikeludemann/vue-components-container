@@ -213,8 +213,8 @@ Vue.component('custom-notification', {
 				<i class="fa-2x fas"></i>
 			</div> 
 			<div class="context">
-				<strong id="headline">Warning!</strong><br/>
-				<span id="text">Indicates a warning that might need attention.</span><br/>
+				<strong id="headline"></strong><br/>
+				<span id="text"></span><br/>
         <span id="timestamp"></span>
 			</div>
 			<div class="close">
