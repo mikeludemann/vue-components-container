@@ -2,8 +2,8 @@ Vue.component('carousel', {
 	props: {},
 	data() {
 		return {
-      isHover: false,
-      viewport: {}
+			isHover: false,
+			viewport: {}
 		}
 	},
 	computed:{
@@ -57,16 +57,16 @@ Vue.component('carousel', {
 		},
 		insertExternalSource: function () {
 
-      function resizeViewport(){
+			function resizeViewport(){
 
-        this.viewport({
+				this.viewport({
 
-          width: document.documentElement.clientWidth || document.body.clientWidth,
-          height: document.documentElement.clientHeight || document.body.clientHeight
+					width: document.documentElement.clientWidth || document.body.clientWidth,
+					height: document.documentElement.clientHeight || document.body.clientHeight
 
-        });
+				});
 
-      }
+			}
 
 			window.addEventListener('resize', resizeViewport);
 
@@ -105,17 +105,17 @@ Vue.component('carousel', {
 
 			prev.addEventListener("click", function(){
 
-        slider(defaultIndex -= 1);
-        
+				slider(defaultIndex -= 1);
+
 			});
 
 			next.addEventListener("click", function(){
 
-        slider(defaultIndex += 1);
-        
-      });
-      
-      window.removeEventListener('resize', resizeViewport);
+				slider(defaultIndex += 1);
+
+				});
+
+				window.removeEventListener('resize', resizeViewport);
 
 		}
 	},

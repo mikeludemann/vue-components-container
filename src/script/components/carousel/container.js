@@ -9,28 +9,28 @@ Vue.component('container', {
 	methods: {
 		insertExternalSource: function () {
 
-      var style = document.createElement('style');
+			var style = document.createElement('style');
 
-      style.type = 'text/css';
+			style.type = 'text/css';
 
-      let styling = 
-      `
-      @keyframes fade{
-        from {
-          opacity: 0.4
-        } 
-        to {
-          opacity: 1
-        }
-      }
+			let styling = 
+			`
+			@keyframes fade{
+				from {
+					opacity: 0.4
+				} 
+				to {
+					opacity: 1
+				}
+			}
 
-      .fading{
-        animation: "fade 1s"
-      }
-      `
+			.fading{
+				animation: "fade 1s"
+			}
+			`
 
-      style.innerHTML = styling;
-      document.getElementsByTagName('head')[0].appendChild(style);
+			style.innerHTML = styling;
+			document.getElementsByTagName('head')[0].appendChild(style);
 
     }
   },
