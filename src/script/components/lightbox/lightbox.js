@@ -221,14 +221,38 @@ Vue.component('lightbox', {
 
 			var row = document.getElementsByClassName("row")[0];
 
-			row.insertAdjacentHTML('afterbegin','this.images.map((image) => { return <div v-bind:class="column"><img src="image.source" v-bind:class="hover-shadow cursor"/></div>; } )');
+			for(var i = 0; i < this.images.length; i++){
+
+				var node = document.createElement("div");
+				node.setAttribute("class","column");
+				
+				var image = document.createElement("img");
+				image.setAttribute("class","hover-shadow cursor");
+				image.setAttribute("src",this.images[i].source);
+				node.appendChild(image);
+				
+				row.appendChild(node);
+
+			}
 
 			var modalContent = document.getElementsByClassName("modal-content")[0];
 
-			modalContent.insertAdjacentHTML('afterbegin','this.images.map((image) => { return <div v-bind:class="mySlides"><img src="image.source"/></div>; } )');
+			for(var i = 0; i < this.images.length; i++){
+
+				var node = document.createElement("div");
+				node.setAttribute("class","mySlides");
+				
+				var image = document.createElement("img");
+				image.setAttribute("src",this.images[i].source);
+				node.appendChild(image);
+				
+				modalContent.appendChild(node);
 
 			}
-		},
+
+		}
+		
+	},
 	mounted: function () {
 		this.insertExternalSource();
 	},
